@@ -3,7 +3,16 @@ public class Vacancy {
     public String type;
     public double salary;
     public int expLevel;
+    public boolean vacancyAvailable = true;
     
+    public boolean isVacancyAvailable() {
+        return vacancyAvailable;
+    }
+    
+    public void setVacancyAvailable(boolean vacancyAvailable) {
+        this.vacancyAvailable = vacancyAvailable;
+    }
+
     public int getExpLevel() {
         return expLevel;
     }
